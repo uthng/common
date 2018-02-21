@@ -42,7 +42,7 @@
     "pkg/tlsconfig"
   ]
   revision = "092cba3727bb9b4a2f0e922cd6c0f93ea270e363"
-  version = "v1.13.1"
+  version = "v17.05.x-ce"
 
 [[projects]]
   name = "github.com/docker/go-connections"
@@ -61,22 +61,10 @@
   version = "v0.3.2"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/johntdyer/slack-go"
-  packages = ["."]
-  revision = "88ef3038545fa084d81f36e4a6943d112cdd74f6"
-
-[[projects]]
-  branch = "master"
-  name = "github.com/johntdyer/slackrus"
-  packages = ["."]
-  revision = "3992f319fd0ac349483279ef74742cd787841cba"
-
-[[projects]]
   name = "github.com/moby/moby"
   packages = ["client"]
   revision = "092cba3727bb9b4a2f0e922cd6c0f93ea270e363"
-  version = "v1.13.1"
+  version = "v17.05.x-ce"
 
 [[projects]]
   name = "github.com/pkg/errors"
@@ -114,7 +102,7 @@
     "ssh",
     "ssh/terminal"
   ]
-  revision = "9de5f2eaf759b4c4550b3db39fed2e9e5f86f45c"
+  revision = "432090b8f568c018896cd8a0fb0345872bbac6ce"
 
 [[projects]]
   branch = "master"
@@ -124,7 +112,7 @@
     "context/ctxhttp",
     "proxy"
   ]
-  revision = "f5dfe339be1d06f81b22525fe34671ee7d2c8904"
+  revision = "cbe0f9307d0156177f9dd5dc85da1a31abc5f2fb"
 
 [[projects]]
   branch = "master"
@@ -138,6 +126,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a76ac4e5fcfcd407c21c759824db5f9825540a20b9997611c9d0baf0df6244d4"
+  inputs-digest = "b5f2cadbe4642c4f4ea1c7e2d9960b5200532d5525904570210f04d287e1c517"
   solver-name = "gps-cdcl"
   solver-version = 1

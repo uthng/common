@@ -6,7 +6,7 @@ import (
     "strings"
 
     "github.com/sirupsen/logrus"
-    "github.com/johntdyer/slackrus"
+    //"github.com/johntdyer/slackrus"
 )
 
 // logrus.Fields is just a map[string]interface{}
@@ -38,20 +38,20 @@ func SetLogLevel(level string) error {
     return nil
 }
 
-func SetHookSlack(hookurl string, acceptedlevels string, channel string, iconemoji string, username string) {
-    l, err := logrus.ParseLevel(acceptedlevels)
-    if err != nil {
-        l = logrus.InfoLevel
-    }
+//func SetHookSlack(hookurl string, acceptedlevels string, channel string, iconemoji string, username string) {
+    //l, err := logrus.ParseLevel(acceptedlevels)
+    //if err != nil {
+        //l = logrus.InfoLevel
+    //}
 
-    logger.Hooks.Add(&slackrus.SlackrusHook{
-        HookURL: hookurl ,
-        AcceptedLevels: slackrus.LevelThreshold(l),
-        Channel: channel,
-        IconEmoji: iconemoji,
-        Username: username,
-    })
-}
+    //logger.Hooks.Add(&slackrus.SlackrusHook{
+        //HookURL: hookurl ,
+        //AcceptedLevels: slackrus.LevelThreshold(l),
+        //Channel: channel,
+        //IconEmoji: iconemoji,
+        //Username: username,
+    //})
+//}
 
 // SetLogFormatter set formatter for logrus
 func SetLogFormatter(formatter logrus.Formatter) {

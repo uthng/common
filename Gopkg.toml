@@ -1,6 +1,6 @@
 # Gopkg.toml example
 #
-# Refer to https://github.com/golang/dep/blob/master/docs/Gopkg.toml.md
+# Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
 # for detailed Gopkg.toml documentation.
 #
 # required = ["github.com/user/thing/cmd/thing"]
@@ -25,17 +25,17 @@
 #   unused-packages = true
 
 
-[[constraint]]
-  branch = "master"
-  name = "github.com/johntdyer/slackrus"
+#[[constraint]]
+  #name = "github.com/docker/docker"
+  #version = "1.13.1"
 
-[[constraint]]
-  name = "github.com/moby/moby"
-  version = "1.13.1"
+#[[constraint]]
+  #name = "github.com/moby/moby"
+  #version = "1.13.1"
 
-[[constraint]]
-  name = "github.com/sirupsen/logrus"
-  version = "1.0.4"
+#[[constraint]]
+  #name = "github.com/sirupsen/logrus"
+  #version = "1.0.4"
 
 [[constraint]]
   name = "github.com/stretchr/testify"
@@ -44,6 +44,10 @@
 [[constraint]]
   branch = "master"
   name = "golang.org/x/crypto"
+
+[[constraint]]
+  branch = "master"
+  name = "golang.org/x/net"
 
 [prune]
   go-tests = true
