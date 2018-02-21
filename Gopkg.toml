@@ -24,18 +24,30 @@
 #   go-tests = true
 #   unused-packages = true
 
+#required = ["github.com/docker/distribution"]
+
+[[constraint]]
+  name = "github.com/docker/docker"
+  branch = "master"
 
 #[[constraint]]
-  #name = "github.com/docker/docker"
-  #version = "1.13.1"
+  #name = "github.com/docker/go-connections"
+  #branch = "master"
+
 
 #[[constraint]]
-  #name = "github.com/moby/moby"
-  #version = "1.13.1"
+  #name = "github.com/docker/go-units"
+  #branch = "master"
 
-#[[constraint]]
-  #name = "github.com/sirupsen/logrus"
+[[override]]
+  name = "github.com/docker/distribution"
+  branch = "master"
+  #revision="6664ec703991875e14419ff4960921cce7678bab"
+
+[[constraint]]
+  name = "github.com/sirupsen/logrus"
   #version = "1.0.4"
+  branch = "master"
 
 [[constraint]]
   name = "github.com/stretchr/testify"
